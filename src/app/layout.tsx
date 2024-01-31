@@ -1,8 +1,9 @@
-import type { Metadata, Viewport } from "next";
-import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "components/utility/ThemeProvider";
-import { jbmono } from "util/fonts";
+import type { Metadata, Viewport } from "next";
 import { LINKS } from "util/constants";
+import { jbmono } from "util/fonts";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Krumbit",
@@ -61,6 +62,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           disableTransitionOnChange
         >
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
