@@ -6,7 +6,6 @@ export interface NavbarElement {
 }
 
 export interface Project {
-  id: number;
   name: string;
   description: string;
   cover: ImageProps["src"],
@@ -15,7 +14,6 @@ export interface Project {
 }
 
 export interface Skill {
-  id: number,
   name: string,
   description: string,
   image: ImageProps["src"],
