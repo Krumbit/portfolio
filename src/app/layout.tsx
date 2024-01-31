@@ -6,9 +6,9 @@ import { jbmono } from "util/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Krumbit",
-  description: "Krumbit's personal portfolio",
-  applicationName: "Krumbit",
+  title: "krumbit",
+  description: "krumbit's personal portfolio",
+  applicationName: "krumbit",
   authors: [{ name: "Krumbit", url: LINKS.GitRepo }],
   category: "Personal Portfolio",
   creator: "Krumbit",
@@ -38,13 +38,22 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL(LINKS.BaseURL),
   openGraph: {
-    siteName: "Krumbit",
-    title: "Krumbit",
-    description: "Krumbit's personal portfolio",
+    siteName: "krumbit",
+    title: "krumbit",
+    description: "krumbit's personal portfolio",
     type: "website",
     url: new URL(LINKS.BaseURL),
     images: [{ url: "/static/pfp.png", alt: "Krumbit profile picture" }],
+    locale: "en_US",
   },
+  twitter: {
+    title: "krumbit",
+    description: "krumbit's personal portfolio",
+    site: "@krumbit",
+    card: "summary",
+    creator: "@krumbit",
+    images: [{ url: "/static/pfp.png", alt: "Krumbit profile picture" }],
+  }
 };
 
 export const viewport: Viewport = {
