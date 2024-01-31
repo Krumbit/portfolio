@@ -1,0 +1,18 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2_9)">
+<path d="M361 250C361 311.304 311.304 361 250 361C188.696 361 139 311.304 139 250C139 188.696 188.696 139 250 139C311.304 139 361 188.696 361 250ZM172.3 250C172.3 292.913 207.087 327.7 250 327.7C292.913 327.7 327.7 292.913 327.7 250C327.7 207.087 292.913 172.3 250 172.3C207.087 172.3 172.3 207.087 172.3 250Z" fill="white"/>
+<rect x="236" width="27" height="111" rx="13.5" fill="white"/>
+<rect x="236" y="389" width="27" height="111" rx="13.5" fill="white"/>
+<rect x="389" y="263" width="27" height="111" rx="13.5" transform="rotate(-90 389 263)" fill="white"/>
+<rect y="263" width="27" height="111" rx="13.5" transform="rotate(-90 0 263)" fill="white"/>
+<rect x="60" y="79.6418" width="27.7778" height="111.111" rx="13.8889" transform="rotate(-45 60 79.6418)" fill="white"/>
+<rect x="419.679" y="60" width="27.7778" height="111.111" rx="13.8889" transform="rotate(45 419.679 60)" fill="white"/>
+<rect x="341.111" y="360.753" width="27.7778" height="111.111" rx="13.8889" transform="rotate(-45 341.111 360.753)" fill="white"/>
+<rect x="138.567" y="341.111" width="27.7778" height="111.111" rx="13.8889" transform="rotate(45 138.567 341.111)" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_2_9">
+<rect width="500" height="500" fill="white"/>
+</clipPath>
+</defs>
+</svg>

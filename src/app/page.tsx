@@ -1,0 +1,21 @@
+import Footer from "components/global/Footer";
+import Navbar from "components/global/navbar/Navbar";
+import About from "components/home/About";
+import Contact from "components/home/contact/Contact";
+import Hero from "components/home/Hero";
+import Projects from "components/home/projects/Projects";
+import Skills from "components/home/skills/Skills";
+
+export default function Home() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
+      <Footer />
+    </>
+  );
+}
