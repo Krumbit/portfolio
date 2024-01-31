@@ -56,10 +56,6 @@ export const metadata: Metadata = {
   }
 };
 
-export const viewport: Viewport = {
-  themeColor: "815AF0",
-};
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
