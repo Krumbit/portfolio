@@ -11,3 +11,5 @@ This page was designed by me using **Figma** and uses **Next.js** and **Tailwind
 - [ ] Add more easily accessible contact info in the contacts section
 - [ ] Add "show more" buttons to projects and skills sections to support more content
 - [ ] Eventually split into multiple pages
+- [ ] Fix navbar scrolling on mobile
+- [ ] Add skill tags to projects
