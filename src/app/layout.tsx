@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary",
     creator: "@krumbit",
     images: [{ url: "/static/pfp.png", alt: "Krumbit profile picture" }],
-  }
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -1,0 +1,29 @@
+name: Quality
+on: [push]
+
+jobs:
+  quality:
+    name: Quality
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: Checkout from GitHub
+        uses: actions/checkout@v3
+
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install Dependencies
+        run: bun install
+
+      - name: Run Linter
+        run: bun lint
+
+      - name: Run Prettier
+        run: bun format:check
