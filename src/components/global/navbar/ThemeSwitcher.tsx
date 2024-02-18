@@ -16,7 +16,7 @@ export default function ThemeSwitcher({ className }: ClassNameProp) {
 
   return (
     <Image
-      className={mounted ? `hoverbg rounded-full p-2 cursor-pointer ${className}` : ""}
+      className={mounted ? `hoverbg cursor-pointer rounded-full p-2 ${className}` : ""}
       src={!mounted ? getIcon(undefined) : getIcon(resolvedTheme)}
       width={50}
       height={50}

@@ -13,12 +13,21 @@ export default function Navbar() {
   const handleClick = () => setOpen(!open);
 
   return (
-    <header id="dropdown" className={`fixed ddopen w-screen overflow-hidden backdrop-blur-md z-40 ${open ? "h-88 md:h-24" : "h-24"}`}>
-      <div className="flex h-24 w-full justify-between items-center px-4">
+    <header
+      id="dropdown"
+      className={`ddopen fixed z-40 w-screen overflow-hidden backdrop-blur-md ${
+        open ? "h-88 md:h-24" : "h-24"
+      }`}
+    >
+      <div className="flex h-24 w-full items-center justify-between px-4">
         <MainLink scrollDuration={menuAnimationDurationMs} />
         <SubLinks scrollDuration={menuAnimationDurationMs} />
-        <div className='md:hidden flex items-center align-middle'>
-          <ThemeSwitcher className={`translate-x-0 transition-[transform,opacity] duration-250 ${open ? "translate-x-0 opacity-100" : "opacity-0 translate-x-14 pointer-events-none"}`} />
+        <div className="flex items-center align-middle md:hidden">
+          <ThemeSwitcher
+            className={`translate-x-0 transition-[transform,opacity] duration-250 ${
+              open ? "translate-x-0 opacity-100" : "pointer-events-none translate-x-14 opacity-0"
+            }`}
+          />
           <Hamburger openState={open} clickHandler={handleClick} />
         </div>
       </div>

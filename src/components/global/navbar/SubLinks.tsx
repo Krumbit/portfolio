@@ -5,7 +5,7 @@ import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function SubLinks({ scrollDuration }: NavLinkProps) {
   return (
-    <ul className="max-md:hidden flex items-center text-invertbg text-xl mx-2">
+    <ul className="mx-2 flex items-center text-xl text-invertbg max-md:hidden">
       {navbarElements.map((item, index) => {
         return <SubLink key={index} item={item} scrollDuration={scrollDuration} />;
       })}

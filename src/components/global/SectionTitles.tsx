@@ -5,11 +5,19 @@ interface SectionTitlesProps extends HTMLProps<HTMLHeadingElement> {
 }
 
 function SectionTitle({ text, className, ...rest }: SectionTitlesProps) {
-  return <h1 className={`md:text-8xl sm:text-7xl text-6xl text-primary ${className}`} {...rest}>{text}</h1>;
+  return (
+    <h1 className={`text-6xl text-primary sm:text-7xl md:text-8xl ${className}`} {...rest}>
+      {text}
+    </h1>
+  );
 }
 
 function SectionSubtitle({ text, className, ...rest }: SectionTitlesProps) {
-  return <h2 className={`md:text-xl sm:text-lg text-invertbg text-opacity-60 ${className}`} {...rest}>{text}</h2>;
+  return (
+    <h2 className={`text-invertbg text-opacity-60 sm:text-lg md:text-xl ${className}`} {...rest}>
+      {text}
+    </h2>
+  );
 }
 
 export { SectionTitle, SectionSubtitle };

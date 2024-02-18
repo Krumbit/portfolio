@@ -12,11 +12,7 @@ export default function CurrentTime() {
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <span className="text-lg text-gray-700 dark:text-gray-300">
-      {time}
-    </span>
-  );
+  return <span className="text-lg text-gray-700 dark:text-gray-300">{time}</span>;
 }
 
 function getTime() {

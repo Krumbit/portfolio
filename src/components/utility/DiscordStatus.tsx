@@ -17,9 +17,11 @@ export default function DiscordStatus() {
 
   return (
     <>
-      <div className="relative flex w-3 h-3">
-        <div className={`absolute inline-flex w-full h-full rounded-full transition-colors animate-ping ${statusColor}`} />
-        <div className={`relative inline-flex w-full h-full rounded-full ${statusColor}`} />
+      <div className="relative flex h-3 w-3">
+        <div
+          className={`absolute inline-flex h-full w-full animate-ping rounded-full transition-colors ${statusColor}`}
+        />
+        <div className={`relative inline-flex h-full w-full rounded-full ${statusColor}`} />
       </div>
     </>
   );

@@ -7,7 +7,7 @@ export default function ProjectsGrid() {
   const projectsList = [...projects, ...getComingSoonCards()];
 
   return (
-    <div className="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-8 m-10">
+    <div className="m-10 grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-md:grid-cols-1">
       {projectsList.map((project, index) => {
         return <ProjectCard key={index} project={project} />;
       })}
@@ -23,7 +23,7 @@ function getComingSoonCards() {
     cards.push({
       name: "coming soon",
       description: "new project to be revealed soon™️",
-      cover: "/static/projects/comingSoon.png"
+      cover: "/static/projects/comingSoon.png",
     } satisfies Project);
   }
 

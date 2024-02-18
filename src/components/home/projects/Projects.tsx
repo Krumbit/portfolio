@@ -10,9 +10,11 @@ export default function Projects() {
       <SectionTitle text="projects:" />
       <SectionSubtitle className="my-4" text="a few projects i've worked on" />
       <ProjectsGrid />
-      <h3 className="text-primary text-center italic text-xl max-md:text-lg max-sm:text-base mt-2 mx-4">
+      <h3 className="mx-4 mt-2 text-center text-xl italic text-primary max-md:text-lg max-sm:text-base">
         More projects can be found on my&nbsp;
-        <Link href={LINKS.Github} className="font-bold underline underline-offset-4">GitHub</Link>
+        <Link href={LINKS.Github} className="font-bold underline underline-offset-4">
+          GitHub
+        </Link>
         .
       </h3>
     </Section>

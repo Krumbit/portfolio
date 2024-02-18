@@ -9,6 +9,11 @@ export default function ShowMore({ open, setOpen }: ShowMoreProps) {
   };
 
   return (
-    <button className="mx-auto py-4 px-8 text-xl border-2 border-invertbg rounded-full hoverbg" onClick={handleClick}>{open ? "show less" : "show more"}</button>
+    <button
+      className="hoverbg mx-auto rounded-full border-2 border-invertbg px-8 py-4 text-xl"
+      onClick={handleClick}
+    >
+      {open ? "show less" : "show more"}
+    </button>
   );
 }

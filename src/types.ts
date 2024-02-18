@@ -8,16 +8,16 @@ export interface NavbarElement {
 export interface Project {
   name: string;
   description: string;
-  cover: ImageProps["src"],
+  cover: ImageProps["src"];
   link?: string;
   github?: boolean;
 }
 
 export interface Skill {
-  name: string,
-  description: string,
-  image: ImageProps["src"],
-  lightThemeImage?: ImageProps["src"],
+  name: string;
+  description: string;
+  image: ImageProps["src"];
+  lightThemeImage?: ImageProps["src"];
 }
 
 export interface Contact {

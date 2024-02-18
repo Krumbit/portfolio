@@ -8,8 +8,8 @@
     "start": "next start",
     "serve": "next serve",
     "lint": "next lint",
-    "format:check": "prettier --check ./src/**/*.{ts,tsx} --cache",
-    "format:write": "prettier --write ./src/**/*.{ts,tsx} --cache",
+    "format:check": "prettier --check \"./src/**/*.{ts,tsx}\" --cache",
+    "format:write": "prettier --write \"./src/**/*.{ts,tsx}\" --cache",
     "prepare": "husky install"
   },
   "dependencies": {

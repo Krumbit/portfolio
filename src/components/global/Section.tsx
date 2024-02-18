@@ -6,7 +6,7 @@ interface SectionProps {
 
 export default function Section({ id, className, children }: SectionProps) {
   return (
-    <section id={id} className={`min-h-[100lvh] flex flex-col justify-center ${className}`}>
+    <section id={id} className={`flex min-h-[100lvh] flex-col justify-center ${className}`}>
       {children}
     </section>
   );
