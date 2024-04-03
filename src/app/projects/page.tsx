@@ -13,7 +13,7 @@ export default function ProjectsPage() {
         dropdownHeight="h-16"
       />
       <main>
-        <section id="projects" className="flex min-h-[100lvh] flex-col items-center">
+        <section id="projects" className="flex min-h-[100lvh] flex-col items-center gap-4">
           <SectionTitle className="mt-28" text="projects" />
           <SectionSubtitle text="a (mostly) full list of my past projects" />
           <ProjectsGrid preview={false} />

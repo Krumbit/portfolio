@@ -23,12 +23,4 @@ export const projects: Project[] = [
     link: "https://github.com/Krumbit/CookieClicker",
     github: true,
   },
-  {
-    name: "Cookie Clicker Plugin",
-    description:
-      "A small project I did for fun and Java practice - my own version of the Cookie Clicker game but in Minecraft.",
-    cover: "/static/projects/cookieClicker.png",
-    link: "https://github.com/Krumbit/CookieClicker",
-    github: true,
-  },
 ];
