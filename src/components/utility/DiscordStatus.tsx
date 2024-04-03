@@ -30,9 +30,7 @@ export default function DiscordStatus() {
       />
       <div
         className={`size-full absolute left-0 top-0 overflow-hidden rounded-full indent-3 text-sm ${statusColor}`}
-      >
-        {statusName}
-      </div>
+      />
     </div>
   );
 }
