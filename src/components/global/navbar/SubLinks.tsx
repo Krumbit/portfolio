@@ -1,12 +1,15 @@
-import { navbarElements } from "data/global";
+import { NavLinkProps, NavbarElement } from "types";
 import SubLink from "./SubLink";
-import { NavLinkProps } from "types";
 import ThemeSwitcher from "./ThemeSwitcher";
 
-export default function SubLinks({ scrollDuration }: NavLinkProps) {
+interface SubLinksProps extends NavLinkProps {
+  links: NavbarElement[];
+}
+
+export default function SubLinks({ links, scrollDuration }: SubLinksProps) {
   return (
     <ul className="mx-2 flex items-center text-xl text-invertbg max-md:hidden">
-      {navbarElements.map((item, index) => {
+      {links.map((item, index) => {
         return <SubLink key={index} item={item} scrollDuration={scrollDuration} />;
       })}
       <li>

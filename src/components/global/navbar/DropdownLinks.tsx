@@ -1,15 +1,15 @@
-import { navbarElements } from "data/global";
 import DropdownLink from "./DropdownLink";
-import { NavLinkProps } from "types";
+import { NavLinkProps, NavbarElement } from "types";
 
-export interface DropdownLinksProps extends NavLinkProps {
+interface DropdownLinksProps extends NavLinkProps {
   clickHandler: () => void;
+  links: NavbarElement[];
 }
 
-export default function DropdownLinks({ scrollDuration, clickHandler }: DropdownLinksProps) {
+export default function DropdownLinks({ scrollDuration, clickHandler, links }: DropdownLinksProps) {
   return (
     <div className="relative flex h-auto w-full flex-col px-8 md:hidden">
-      {navbarElements.map((item, index) => {
+      {links.map((item, index) => {
         return (
           <DropdownLink
             key={index}

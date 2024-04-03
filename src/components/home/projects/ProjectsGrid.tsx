@@ -1,10 +1,10 @@
-import { projects } from "data/home";
+import { projects } from "data/global";
 import ProjectCard from "./ProjectCard";
 import { Project } from "types";
 import { lowestMultipleAboveNumber } from "util/helpers";
 
-export default function ProjectsGrid() {
-  const projectsList = [...projects, ...getComingSoonCards()];
+export default function ProjectsGrid({ preview }: { preview: boolean }) {
+  const projectsList = [...projects, ...getComingSoonCards()].splice(0, preview ? 3 : Infinity);
 
   return (
     <div className="m-10 grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-md:grid-cols-1">

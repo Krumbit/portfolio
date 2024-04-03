@@ -5,11 +5,17 @@ import Contact from "components/home/contact/Contact";
 import Hero from "components/home/Hero";
 import Projects from "components/home/projects/Projects";
 import Skills from "components/home/skills/Skills";
+import { homeNavbarElements } from "data/home";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar
+        mainLinksToSamePage
+        mainLink="hero"
+        subLinks={homeNavbarElements}
+        dropdownHeight="h-64"
+      />
       <Hero />
       <About />
       <Projects />

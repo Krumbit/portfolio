@@ -1,8 +1,9 @@
 import { Link as ScrollLink } from "react-scroll";
 import { NavbarElement } from "types";
-import { DropdownLinksProps } from "./DropdownLinks";
 
-interface DropdownLinkProps extends DropdownLinksProps {
+interface DropdownLinkProps {
+  scrollDuration: number;
+  clickHandler: () => void;
   item: NavbarElement;
 }
 
