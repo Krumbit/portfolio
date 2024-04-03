@@ -10,19 +10,29 @@ const statusColors = {
   offline: "bg-gray-500",
 } satisfies Record<LanyardData["discord_status"], string>;
 
+const statusMapping = {
+  online: "Online",
+  idle: "Idle",
+  dnd: "Do Not Disturb",
+  offline: "Offline",
+} satisfies Record<LanyardData["discord_status"], string>;
+
 export default function DiscordStatus() {
   const { data, isLoading } = useLanyard({ userId: DISCORD_USER_ID });
   const status = data?.data.discord_status ?? "offline";
   const statusColor = isLoading ? loadingColor : statusColors[status];
+  const statusName = isLoading ? "Loading" : statusMapping[status];
 
   return (
-    <>
-      <div className="relative flex h-3 w-3">
-        <div
-          className={`absolute inline-flex h-full w-full animate-ping rounded-full transition-colors ${statusColor}`}
-        />
-        <div className={`relative inline-flex h-full w-full rounded-full ${statusColor}`} />
+    <div className="size-3 group relative">
+      <div
+        className={`size-full absolute left-0 top-0 animate-ping rounded-full transition-colors ${statusColor}`}
+      />
+      <div
+        className={`size-full absolute left-0 top-0 overflow-hidden rounded-full indent-3 text-sm ${statusColor}`}
+      >
+        {statusName}
       </div>
-    </>
+    </div>
   );
 }
