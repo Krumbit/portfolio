@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "components/utility/ThemeProvider";
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import { LINKS } from "util/constants";
 import { jbmono } from "util/fonts";
 import "./globals.css";
@@ -68,6 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           {children}
           <Analytics />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>

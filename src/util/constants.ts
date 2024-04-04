@@ -10,7 +10,7 @@ export const TIME_FORMAT_OPTIONS = {
 export const LINKS = {
   BaseURL: "https://www.krumb.it",
   Discord: `https://discordapp.com/users/${DISCORD_USER_ID}`,
-  Email: "mailto:krumbit@outlook.com",
+  Email: "mailto:krumbit@krumb.it",
   Github: "https://github.com/Krumbit",
   GitRepo: "https://github.com/Krumbit/portfolio",
   Twitter: "https://twitter.com/krumbit",
