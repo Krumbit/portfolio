@@ -35,9 +35,6 @@ export default {
       fontSize: {
         skilldescription: "7.5cqw",
       },
-      transitionTimingFunction: {
-        "max-height-anim": "cubic-bezier(0, 1, 0, 1)",
-      },
     },
   },
   plugins: [
