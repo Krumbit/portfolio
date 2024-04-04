@@ -12,7 +12,7 @@ export default function SkillsGrid() {
     <>
       <Grid items={skills.slice(0, 12)} />
       <div
-        className={`grid transition-all duration-500 ease-in-out ${
+        className={`grid transition-[grid-template-rows] duration-500 ease-in-out ${
           showMore ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         }`}
       >
