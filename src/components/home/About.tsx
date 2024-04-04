@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <Section id="about">
-      <div className="mx-10 flex w-3/4 flex-col">
+      <div className="mx-10 flex w-3/4 flex-col max-md:mx-8">
         <SectionTitle text="about me:" />
         <SectionSubtitle text="a little bit about myself" />
         <div className="my-10 text-3xl font-semilight leading-10 text-invertbg max-md:text-2xl max-sm:text-xl">
