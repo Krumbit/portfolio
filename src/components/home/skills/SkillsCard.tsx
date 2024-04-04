@@ -39,7 +39,9 @@ export default function SkillsCard({ skill }: SkillsCardProps) {
             width={100}
             height={100}
           />
-          <h3 className="mt-4 text-2xl font-bold max-xl:text-xl max-md:text-lg">{skill.name}</h3>
+          <h3 className="mt-4 text-center text-2xl font-bold max-xl:text-xl max-md:text-lg">
+            {skill.name}
+          </h3>
         </div>
       </div>
     </>
