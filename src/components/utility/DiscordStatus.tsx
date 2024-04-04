@@ -10,10 +10,18 @@ const statusColors = {
   offline: "bg-gray-500",
 } satisfies Record<LanyardData["discord_status"], string>;
 
+const statusMapping = {
+  online: "Online",
+  idle: "Idle",
+  dnd: "Do Not Disturb",
+  offline: "Offline",
+} satisfies Record<LanyardData["discord_status"], string>;
+
 export default function DiscordStatus() {
   const { data, isLoading } = useLanyard({ userId: DISCORD_USER_ID });
   const status = data?.data.discord_status ?? "offline";
   const statusColor = isLoading ? loadingColor : statusColors[status];
+  const statusName = isLoading ? "Loading" : statusMapping[status];
 
   return (
     <div className="relative grid h-3 grid-cols-[0fr] transition-all duration-500 ease-in-out hover:h-6 hover:grid-cols-[1fr]">
