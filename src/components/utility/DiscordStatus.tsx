@@ -24,15 +24,12 @@ export default function DiscordStatus() {
   const statusName = isLoading ? "Loading" : statusMapping[status];
 
   return (
-    <div className="size-3 group relative">
+    <div className="relative grid h-3 grid-cols-[0fr] transition-all duration-500 ease-in-out hover:h-6 hover:grid-cols-[1fr]">
+      <span className="z-10 mx-[0.375rem] overflow-hidden whitespace-nowrap">{statusName}</span>
       <div
-        className={`size-full absolute left-0 top-0 animate-ping rounded-full transition-colors ${statusColor}`}
+        className={`absolute left-0 top-0 size-full animate-ping rounded-full transition-colors ${statusColor}`}
       />
-      <div
-        className={`size-full absolute left-0 top-0 overflow-hidden rounded-full indent-3 text-sm ${statusColor}`}
-      >
-        {statusName}
-      </div>
+      <div className={`absolute left-0 top-0 size-full rounded-full ${statusColor}`} />
     </div>
   );
 }
