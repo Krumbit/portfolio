@@ -36,4 +36,3 @@ bun dev
 - [ ] Eventually split into multiple pages
 - [ ] Fix navbar scrolling on mobile
 - [ ] Add skill tags to projects
-- [ ] Add spinning animation to wave emoji on hover
