@@ -36,5 +36,4 @@ bun dev
 - [ ] Eventually split into multiple pages
 - [ ] Fix navbar scrolling on mobile
 - [ ] Add skill tags to projects
-- [ ] Make Discord status display purpose clearer
 - [ ] Add spinning animation to wave emoji on hover
