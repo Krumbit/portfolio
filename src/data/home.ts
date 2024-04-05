@@ -28,7 +28,7 @@ export const skills: Skill[] = [
   {
     name: "React",
     description:
-      "JavaScript library for building reactive user interfaces based on resuable components,",
+      "JavaScript library for building reactive user interfaces based on resuable components.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
@@ -57,7 +57,7 @@ export const skills: Skill[] = [
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
   {
-    name: "PostreSQL",
+    name: "PostgreSQL",
     description:
       "Reliable, open-source RDBMS with SQL compliance, extensibility, and advanced features for data management.",
     image:
