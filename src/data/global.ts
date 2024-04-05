@@ -2,6 +2,14 @@ import { Project } from "types";
 
 export const projects: Project[] = [
   {
+    name: "Tasks",
+    description:
+      "A back-end heavy to-do list app built with NextJS and Supabase. Features authentication, task management, and more.",
+    cover: "/static/projects/tasks.png",
+    link: "https://github.com/Krumbit/tasks",
+    github: true,
+  },
+  {
     name: "Zentic Network",
     description: "A fully-custom utility Discord bot for the Zentic Network community.",
     cover: "/static/projects/zenticBot.png",
