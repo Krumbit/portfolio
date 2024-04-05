@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { LanyardData, useLanyard } from "react-use-lanyard";
 import { DISCORD_USER_ID } from "util/constants";
 
@@ -25,7 +26,10 @@ export default function DiscordStatus() {
 
   return (
     <div className="relative grid h-3 grid-cols-[0fr] transition-all duration-500 ease-in-out hover:h-6 hover:grid-cols-[1fr]">
-      <span className="z-10 mx-[0.375rem] overflow-hidden whitespace-nowrap">{statusName}</span>
+      <div className="z-10 mr-3 flex gap-2 overflow-hidden">
+        <span className="whitespace-nowrap indent-3">{statusName}</span>
+        <Image src="static/icons/Discord.svg" alt="Discord Icon" width={15} height={15} />
+      </div>
       <div
         className={`absolute left-0 top-0 size-full animate-ping rounded-full transition-colors ${statusColor}`}
       />
