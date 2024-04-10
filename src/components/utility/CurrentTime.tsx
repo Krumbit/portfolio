@@ -4,17 +4,29 @@ import { useEffect, useState } from "react";
 import { TIME_FORMAT_OPTIONS } from "util/constants";
 
 export default function CurrentTime() {
-  const [time, setTime] = useState("--:-- --");
+  const [hour12, setHour12] = useState(true);
+  const [time, setTime] = useState(getCurrentTime(hour12));
+  const toggleHour12 = () => setHour12(!hour12);
 
   useEffect(() => {
-    setTime(getTime());
-    const interval = setInterval(() => setTime(getTime()), 5_000);
-    return () => clearInterval(interval);
-  }, []);
+    setTime(getCurrentTime(hour12));
+    const interval = setInterval(() => setTime(getCurrentTime(hour12)), 5_000);
 
-  return <span className="text-lg text-gray-700 dark:text-gray-300">{time}</span>;
+    return () => clearInterval(interval);
+  }, [hour12]);
+
+  return (
+    <span
+      className="cursor-pointer select-none text-lg text-gray-700 dark:text-gray-300"
+      onClick={toggleHour12}
+      title={`Switch to ${hour12 ? "24" : "12"}-hour format`}
+      suppressHydrationWarning
+    >
+      {time}
+    </span>
+  );
 }
 
-function getTime() {
-  return new Date().toLocaleString("en-US", TIME_FORMAT_OPTIONS).toLocaleLowerCase();
+function getCurrentTime(hour12: boolean) {
+  return new Date().toLocaleString("en-US", { ...TIME_FORMAT_OPTIONS, hour12 }).toLocaleLowerCase();
 }
