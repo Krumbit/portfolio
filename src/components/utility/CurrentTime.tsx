@@ -1,11 +1,10 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import { TIME_FORMAT_OPTIONS } from "util/constants";
 
 export default function CurrentTime() {
   const [hour12, setHour12] = useState(true);
-  const [time, setTime] = useState(dateToString(new Date(), hour12));
+  const [time, setTime] = useState("--:-- --");
   const toggleHour12 = () => setHour12(!hour12);
 
   useEffect(() => {
@@ -28,5 +27,5 @@ export default function CurrentTime() {
 }
 
 function dateToString(date: Date, hour12: boolean) {
-  return date.toLocaleString("en-US", { ...TIME_FORMAT_OPTIONS, hour12 }).toLocaleLowerCase();
+  return date.toLocaleString("en-US", { ...TIME_FORMAT_OPTIONS, hour12 }).toLowerCase();
 }
