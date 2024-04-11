@@ -4,7 +4,6 @@ export const TIME_FORMAT_OPTIONS = {
   timeZone: "America/Los_Angeles",
   hour: "numeric",
   minute: "numeric",
-  hour12: true,
 } as const satisfies Intl.DateTimeFormatOptions;
 
 export const LINKS = {
