@@ -31,7 +31,6 @@ bun dev
 
 ## To-Do / Ideas 📝
 - [ ] Change border color to brand color on skill card hover
-- [ ] Add more easily accessible contact info in the contacts section
 - [ ] Eventually split into multiple pages
 - [ ] Fix navbar scrolling on mobile
 - [ ] Add skill tags to projects
