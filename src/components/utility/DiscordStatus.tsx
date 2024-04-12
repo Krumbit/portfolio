@@ -27,7 +27,7 @@ export default function DiscordStatus() {
   return (
     <div className="relative grid h-3 grid-cols-[0fr] transition-all duration-500 ease-in-out sm:hover:h-6 sm:hover:grid-cols-[1fr]">
       <div className="z-10 mr-3 flex gap-2 overflow-hidden">
-        <span className="whitespace-nowrap indent-3">{statusName}</span>
+        <span className="whitespace-nowrap indent-3 text-white">{statusName}</span>
         <Image src="static/icons/Discord.svg" alt="Discord Icon" width={15} height={15} />
       </div>
       <div
