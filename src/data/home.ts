@@ -117,16 +117,19 @@ export const contacts: Contact[] = [
     name: "Discord",
     link: LINKS.Discord,
     image: "static/icons/Discord.svg",
+    handle: "@krumbit",
   },
   {
     name: "Twitter",
     link: LINKS.Twitter,
     image: ICONS.X,
+    handle: "@krumbit",
   },
   {
     name: "Email",
-    link: LINKS.Email,
+    link: `mailto:${LINKS.Email}`,
     image: ICONS.Envelope,
+    handle: LINKS.Email,
   },
 ];
 
