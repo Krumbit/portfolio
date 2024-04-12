@@ -23,6 +23,7 @@ export interface Skill {
 export interface Contact {
   name: string;
   link: string;
+  handle: string;
   image: ImageProps["src"];
 }
 
