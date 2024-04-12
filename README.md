@@ -6,7 +6,7 @@ Here, you can find some of my projects, skills, and methods to contact me.
 
 This website was designed by me using **Figma** and uses **Next.js** and **TailwindCSS** to bring it to life.
 
-## Installation
+## Installation 🛠️
 If you wish to locally host a version of this portfolio (e.g for contributing)
 ### Requirements
 * `git` command line ([Windows](https://git-scm.com/download/win) | [Linux](https://git-scm.com/download/linux) | [macOS](https://git-scm.com/download/mac)) installed
