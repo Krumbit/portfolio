@@ -6,12 +6,7 @@ import { projectsNavbarElements } from "data/projects";
 export default function ProjectsPage() {
   return (
     <>
-      <Navbar
-        mainLinksToSamePage={false}
-        mainLink="/"
-        subLinks={projectsNavbarElements}
-        dropdownHeight="h-16"
-      />
+      <Navbar mainLink="/" subLinks={projectsNavbarElements} />
       <main>
         <section id="projects" className="flex min-h-[100lvh] flex-col items-center gap-4">
           <SectionTitle className="mt-28" text="projects" />
