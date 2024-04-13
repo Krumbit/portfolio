@@ -10,12 +10,7 @@ import { homeNavbarElements } from "data/home";
 export default function Home() {
   return (
     <>
-      <Navbar
-        mainLinksToSamePage
-        mainLink="hero"
-        subLinks={homeNavbarElements}
-        dropdownHeight="h-64"
-      />
+      <Navbar mainLinksToSamePage mainLink="hero" subLinks={homeNavbarElements} />
       <Hero />
       <About />
       <Projects />

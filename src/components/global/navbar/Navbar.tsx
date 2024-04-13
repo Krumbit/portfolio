@@ -10,26 +10,20 @@ import { NavbarElement } from "types";
 const menuAnimationDurationMs = 350;
 
 interface NavBarProps {
-  mainLinksToSamePage: boolean;
+  mainLinksToSamePage?: boolean;
   mainLink: string;
   subLinks: NavbarElement[];
-  dropdownHeight: string;
 }
 
-export default function Navbar({
-  mainLinksToSamePage,
-  mainLink,
-  subLinks,
-  dropdownHeight,
-}: NavBarProps) {
+export default function Navbar({ mainLinksToSamePage, mainLink, subLinks }: NavBarProps) {
   const [open, setOpen] = useState<boolean>(false);
   const handleClick = () => setOpen(!open);
 
   return (
-    <header id="dropdown" className={`ddopen fixed z-40 w-screen backdrop-blur-md`}>
+    <header id="dropdown" className="fixed z-40 w-screen backdrop-blur-md">
       <div className="flex h-24 w-full items-center justify-between px-4">
         <MainLink
-          linksToSamePage={mainLinksToSamePage}
+          linksToSamePage={!!mainLinksToSamePage}
           link={mainLink}
           scrollDuration={menuAnimationDurationMs}
         />
@@ -44,8 +38,8 @@ export default function Navbar({
         </div>
       </div>
       <div
-        className={`overflow-hidden transition-all duration-500 ease-in-out ${
-          open ? dropdownHeight : "h-0"
+        className={`grid transition-all duration-500 ease-in-out ${
+          open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         }`}
       >
         <DropdownLinks
