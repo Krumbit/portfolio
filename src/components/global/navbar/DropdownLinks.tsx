@@ -8,7 +8,7 @@ interface DropdownLinksProps extends NavLinkProps {
 
 export default function DropdownLinks({ scrollDuration, clickHandler, links }: DropdownLinksProps) {
   return (
-    <div className="relative flex h-auto w-full flex-col px-8 md:hidden">
+    <div className="relative flex h-auto w-full flex-col overflow-hidden px-8 md:hidden">
       {links.map((item, index) => {
         return (
           <DropdownLink
