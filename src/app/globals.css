@@ -116,10 +116,6 @@ body {
   transform: scaleX(1%);
 }
 
-.ddopen {
-  @apply transition-[height] duration-250 ease-out;
-}
-
 .container-type-size {
   container-type: size;
 }
