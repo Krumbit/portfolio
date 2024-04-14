@@ -8,12 +8,14 @@ export const projects: Project[] = [
     cover: "/static/projects/tasks.png",
     link: "https://github.com/Krumbit/tasks",
     github: true,
+    tags: ["Next.js", "TailwindCSS", "PostgreSQL", "Clerk"],
   },
   {
     name: "Zentic Network",
     description: "A fully-custom utility Discord bot for the Zentic Network community.",
     cover: "/static/projects/zenticBot.png",
     link: "https://www.zentic.cc/",
+    tags: ["TypeScript", "Node.js", "Discord.js", "MongoDB"],
   },
   {
     name: "Tic-Tac-Toe Bot",
@@ -22,6 +24,7 @@ export const projects: Project[] = [
     cover: "/static/projects/tictactoe.png",
     link: "https://github.com/Krumbit/TicTacToeBot",
     github: true,
+    tags: ["TypeScript", "Node.js", "Discord.js"],
   },
   {
     name: "Cookie Clicker Plugin",
@@ -30,5 +33,6 @@ export const projects: Project[] = [
     cover: "/static/projects/cookieClicker.png",
     link: "https://github.com/Krumbit/CookieClicker",
     github: true,
+    tags: ["Java", "Bukkit", "Maven"],
   },
 ];
