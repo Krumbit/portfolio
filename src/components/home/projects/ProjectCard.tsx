@@ -35,8 +35,17 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <a href={project.link} target="_blank" rel="noopener noreferrer">
           <h3 className="mb-2 mt-4 text-center text-xl font-bold">{project.name}</h3>
         </a>
-        <h4 className="text-center text-invertbg text-opacity-75">{project.description}</h4>
+        <p className="text-center text-invertbg text-opacity-75">{project.description}</p>
       </div>
+      <ul className="mt-1 flex list-none flex-wrap items-center">
+        {project.tags.map((tag) => {
+          return (
+            <li key={tag}>
+              <div className="m-1 rounded-lg bg-invertbg bg-opacity-10 px-2 py-1">{tag}</div>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
