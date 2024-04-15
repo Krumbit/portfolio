@@ -24,7 +24,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           className="opacity-0 transition-opacity duration-100 group-hover:opacity-100"
         />
         <Image
-          className="w-full rounded-xl group-hover:opacity-70"
+          className="w-full rounded-xl group-hover:opacity-90 group-hover:dark:opacity-70"
           src={project.cover}
           alt={`Cover image for ${project.name}`}
           width={1280}
@@ -57,7 +57,7 @@ export function LinkIcon({ project, className }: LinkIconProps) {
     >
       {project.link ? (
         <Image
-          className="w-full p-1 dark:invert"
+          className="w-full p-1 invert"
           src={project.github ? ICONS.Github : ICONS.ExternalLink}
           width={100}
           height={100}
