@@ -11,6 +11,7 @@ export interface Project {
   cover: ImageProps["src"];
   link?: string;
   github?: boolean;
+  tags: string[];
 }
 
 export interface Skill {

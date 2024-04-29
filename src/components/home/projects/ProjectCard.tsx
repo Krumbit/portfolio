@@ -24,7 +24,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           className="opacity-0 transition-opacity duration-100 group-hover:opacity-100"
         />
         <Image
-          className="w-full rounded-xl group-hover:opacity-70"
+          className="w-full rounded-xl group-hover:opacity-90 group-hover:dark:opacity-70"
           src={project.cover}
           alt={`Cover image for ${project.name}`}
           width={1280}
@@ -35,8 +35,17 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <a href={project.link} target="_blank" rel="noopener noreferrer">
           <h3 className="mb-2 mt-4 text-center text-xl font-bold">{project.name}</h3>
         </a>
-        <h4 className="text-center text-invertbg text-opacity-75">{project.description}</h4>
+        <p className="text-center text-invertbg text-opacity-75">{project.description}</p>
       </div>
+      <ul className="mt-1 flex list-none flex-wrap items-center">
+        {project.tags.map((tag) => {
+          return (
+            <li key={tag}>
+              <div className="m-1 rounded-lg bg-invertbg bg-opacity-10 px-2 py-1">{tag}</div>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
@@ -48,7 +57,7 @@ export function LinkIcon({ project, className }: LinkIconProps) {
     >
       {project.link ? (
         <Image
-          className="w-full p-1 dark:invert"
+          className="w-full p-1 invert"
           src={project.github ? ICONS.Github : ICONS.ExternalLink}
           width={100}
           height={100}
