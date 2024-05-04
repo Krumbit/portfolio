@@ -10,7 +10,7 @@
     "lint": "next lint",
     "format:check": "prettier --check \"./src/**/*.{ts,tsx}\" --cache",
     "format:write": "prettier --write \"./src/**/*.{ts,tsx}\" --cache",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@vercel/analytics": "^1.1.2",
