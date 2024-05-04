@@ -37,7 +37,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </a>
         <p className="text-center text-invertbg text-opacity-75">{project.description}</p>
       </div>
-      <ul className="mt-1 flex list-none flex-wrap items-center">
+      <ul className="mt-1 flex list-none flex-wrap items-center justify-center">
         {project.tags.map((tag) => {
           return (
             <li key={tag}>
