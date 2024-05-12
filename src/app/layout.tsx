@@ -5,6 +5,9 @@ import type { Metadata } from "next";
 import { LINKS } from "util/constants";
 import { jbmono } from "util/fonts";
 import "./globals.css";
+import { PHProvider } from "./providers";
+import PostHogPageView from "posthog/PostHogPageView";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "krumbit",
@@ -60,18 +63,23 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={jbmono.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-          <Analytics />
-          <SpeedInsights />
-        </ThemeProvider>
-      </body>
+      <PHProvider>
+        <body className={jbmono.className}>
+          <Suspense>
+            <PostHogPageView />
+          </Suspense>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+            <Analytics />
+            <SpeedInsights />
+          </ThemeProvider>
+        </body>
+      </PHProvider>
     </html>
   );
 }
