@@ -7,6 +7,7 @@ import { jbmono } from "util/fonts";
 import "./globals.css";
 import { PHProvider } from "./providers";
 import PostHogPageView from "posthog/PostHogPageView";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "krumbit",
@@ -64,7 +65,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <PHProvider>
         <body className={jbmono.className}>
-          <PostHogPageView />
+          <Suspense>
+            <PostHogPageView />
+          </Suspense>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
