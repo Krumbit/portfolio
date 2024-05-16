@@ -32,3 +32,4 @@ bun dev
 - [ ] Change border color to brand color on skill card hover
 - [ ] Eventually split into multiple pages
 - [ ] Fix navbar scrolling on mobile
+- [ ] Add click effects to heart and wave emojis
