@@ -1,4 +1,4 @@
-import Footer from "components/global/Footer";
+import Footer from "components/global/footer/Footer";
 import Navbar from "components/global/navbar/Navbar";
 import About from "components/home/About";
 import Contact from "components/home/contact/Contact";
