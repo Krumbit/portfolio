@@ -16,7 +16,7 @@ export default function About() {
         <div className="my-10 text-3xl font-semilight leading-10 text-invertbg max-md:text-2xl max-sm:text-xl">
           Hey, I&apos;m Krumbit!{" "}
           <motion.div
-            className="inline-block"
+            className="inline-block cursor-pointer"
             whileHover={{ rotate: [0, -10, 10, -10, 0], y: [-2, 2, -2, 2, -2] }}
             transition={{ duration: 0.7 }}
           >
