@@ -6,7 +6,7 @@ interface SectionTitlesProps extends HTMLProps<HTMLHeadingElement> {
 
 function SectionTitle({ text, className, ...rest }: SectionTitlesProps) {
   return (
-    <h1 className={`text-6xl text-primary sm:text-7xl md:text-8xl ${className}`} {...rest}>
+    <h1 className={`text-5xl text-primary sm:text-7xl md:text-8xl ${className}`} {...rest}>
       {text}
     </h1>
   );
