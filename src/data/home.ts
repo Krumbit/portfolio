@@ -137,17 +137,21 @@ export const homeNavbarElements: NavbarElement[] = [
   {
     name: "about",
     target: "about",
+    offsetDropdownScroll: true,
   },
   {
     name: "projects",
     target: "projects",
+    offsetDropdownScroll: true,
   },
   {
     name: "skills",
     target: "skills",
+    offsetDropdownScroll: true,
   },
   {
     name: "contact",
     target: "contact",
+    offsetDropdownScroll: false,
   },
 ];
