@@ -4,5 +4,6 @@ export const projectsNavbarElements: NavbarElement[] = [
   {
     name: "projects",
     target: "projects",
+    offsetDropdownScroll: false,
   },
 ];

@@ -3,6 +3,7 @@ import { ImageProps } from "next/image";
 export interface NavbarElement {
   name: string;
   target: string;
+  offsetDropdownScroll: boolean;
 }
 
 export interface Project {

@@ -16,6 +16,7 @@ export default function DropdownLinks({ scrollDuration, clickHandler, links }: D
             item={item}
             scrollDuration={scrollDuration}
             clickHandler={clickHandler}
+            offset={item.offsetDropdownScroll ? -96 : 0}
           />
         );
       })}
