@@ -1,13 +1,31 @@
 "use client";
+import Section from "components/global/Section";
 import { SectionSubtitle, SectionTitle } from "components/global/SectionTitles";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
 import { ICONS, LINKS } from "util/constants";
 import { extractTwitterUsername } from "util/helpers";
 import PictureWithCredit from "../utility/PictureWithCredit";
-import Section from "components/global/Section";
-import { motion } from "framer-motion";
 
 export default function About() {
+  const [emoji, setEmoji] = useState("👋");
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleMouseDown = () => {
+    setEmoji("👏");
+    setIsClicked(true);
+  };
+
+  const handleMouseUp = () => {
+    setEmoji("👋");
+  };
+
+  const handleMouseLeave = () => {
+    setEmoji("👋");
+    setIsClicked(false);
+  };
+
   return (
     <Section id="about">
       <div className="mx-10 flex w-3/4 flex-col max-md:mx-8">
@@ -17,10 +35,14 @@ export default function About() {
           Hey, I&apos;m Krumbit!{" "}
           <motion.div
             className="inline-block cursor-pointer"
-            whileHover={{ rotate: [0, -10, 10, -10, 0], y: [-2, 2, -2, 2, -2] }}
-            transition={{ duration: 0.7 }}
+            whileHover={!isClicked ? { rotate: [0, -10, 10, -10, 0], y: [-2, 2, -2, 2, -2] } : {}}
+            animate={{ scale: emoji === "👏" ? 1.5 : 1 }}
+            transition={{ scale: { duration: 0.1 }, default: { duration: 0.7 } }}
+            onMouseDown={handleMouseDown}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseLeave}
           >
-            👋
+            {emoji}
           </motion.div>
           <br />
           I&apos;m a high school student with a passion for software development. Originally from
