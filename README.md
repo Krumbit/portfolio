@@ -31,4 +31,4 @@ bun dev
 ## To-Do / Ideas 📝
 - [ ] Change border color to brand color on skill card hover
 - [ ] Eventually split into multiple pages
-- [ ] Add click effects to heart and wave emojis
+- [ ] Add click effects to heart emoji
