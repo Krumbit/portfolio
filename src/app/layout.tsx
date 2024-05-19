@@ -1,13 +1,12 @@
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { ThemeProvider } from "components/utility/ThemeProvider";
 import type { Metadata } from "next";
+import PostHogPageView from "posthog/PostHogPageView";
+import { Suspense } from "react";
 import { LINKS } from "util/constants";
 import { jbmono } from "util/fonts";
 import "./globals.css";
-import { PHProvider } from "./providers";
-import PostHogPageView from "posthog/PostHogPageView";
-import { Suspense } from "react";
+import { PHProvider, ThemeProvider } from "./providers";
 
 export const metadata: Metadata = {
   title: "krumbit",

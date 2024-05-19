@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { ICONS, LINKS } from "util/constants";
 import { extractTwitterUsername } from "util/helpers";
-import PictureWithCredit from "../utility/PictureWithCredit";
+import PictureWithCredit from "./PictureWithCredit";
 
 export default function About() {
   const [emoji, setEmoji] = useState("👋");

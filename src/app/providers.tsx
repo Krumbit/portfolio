@@ -1,4 +1,6 @@
 "use client";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { type ThemeProviderProps } from "next-themes/dist/types";
 import posthog from "posthog-js";
 import { PostHogProvider } from "posthog-js/react";
 
@@ -12,4 +14,8 @@ if (typeof window !== "undefined") {
 
 export function PHProvider({ children }: { children: React.ReactNode }) {
   return <PostHogProvider client={posthog}>{children}</PostHogProvider>;
+}
+
+export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
+  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
 }

@@ -1,8 +1,8 @@
-import CurrentTime from "components/utility/CurrentTime";
-import DiscordStatus from "components/utility/DiscordStatus";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 import { NavLinkProps } from "types";
+import DiscordStatus from "./DiscordStatus";
+import CurrentTime from "./CurrentTime";
 
 interface MainLinkProps extends NavLinkProps {
   link: string;
