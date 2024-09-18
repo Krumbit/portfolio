@@ -10,7 +10,7 @@ interface ContactCardProps {
 export default function ContactCard({ contact, className }: ContactCardProps) {
   return (
     <Link
-      className={`px-aut o hoverbg group flex h-32 flex-col items-center justify-center border-2 border-invertbg ${className}`}
+      className={`hoverbg group flex h-32 flex-col items-center justify-center border-2 border-invertbg ${className}`}
       href={contact.link}
     >
       <div className="flex items-center gap-x-2">
