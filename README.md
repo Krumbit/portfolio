@@ -13,7 +13,9 @@ If you wish to locally host a version of this portfolio (e.g for contributing)
 * `node` [Version 18.17](https://nodejs.org/en) or later installed
 * `bun` ([macOS | Linux | Windows](https://bun.sh/docs/installation)) installed
 
+> [!NOTE]
 > Note: Although the Bun CLI and package manager are the ones used, Next.js requires you to have Node installed on your system - that is why both it and Bun appear in system requirements.
+
 ### Instructions
 1. Clone the repository
 ```sh
