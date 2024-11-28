@@ -7,7 +7,7 @@ export default function Hero() {
         <KrumbitTitle />
       </div>
       <h2 className="m-4 text-center text-3xl text-invertbg max-md:text-2xl">
-        a full-stack developer
+        full-stack developer
       </h2>
     </Section>
   );
