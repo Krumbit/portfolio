@@ -1,6 +1,7 @@
 "use client";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { Skill } from "types";
 

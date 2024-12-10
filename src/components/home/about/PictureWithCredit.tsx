@@ -3,7 +3,7 @@ import Image, { ImageProps } from "next/image";
 import { ReactElement, useState } from "react";
 
 interface PictureWithCreditProps extends ImageProps {
-  credit: ReactElement;
+  credit: ReactElement<any>;
   creditHref?: string;
 }
 

@@ -17,7 +17,7 @@ export default function ThemeSwitcher({ className }: ClassNameProp) {
   return (
     <Image
       className={mounted ? `hoverbg cursor-pointer rounded-full p-2 ${className}` : ""}
-      src={!mounted ? getIcon(undefined) : getIcon(resolvedTheme)}
+      src={mounted ? getIcon(resolvedTheme) : getIcon(undefined)}
       width={50}
       height={50}
       alt="Dark mode switch"
