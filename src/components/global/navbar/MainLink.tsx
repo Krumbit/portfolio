@@ -12,7 +12,7 @@ interface MainLinkProps extends NavLinkProps {
 export default function MainLink({ link, linksToSamePage, scrollDuration }: MainLinkProps) {
   return (
     <div className="mx-4 flex h-full flex-col items-start justify-center">
-      <h1 className="mt-4 text-3xl text-invertbg">
+      <h1 className="mt-2 text-3xl text-invertbg">
         {linksToSamePage ? (
           <ScrollLink
             className="cursor-pointer"

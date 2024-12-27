@@ -4,7 +4,7 @@ import Hamburger from "components/global/navbar/Hamburger";
 import MainLink from "components/global/navbar/MainLink";
 import SubLinks from "components/global/navbar/SubLinks";
 import ThemeSwitcher from "components/global/navbar/ThemeSwitcher";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavbarElement } from "types";
 
 const menuAnimationDurationMs = 350;
@@ -17,10 +17,24 @@ interface NavBarProps {
 
 export default function Navbar({ mainLinksToSamePage, mainLink, subLinks }: NavBarProps) {
   const [open, setOpen] = useState<boolean>(false);
+  const [scrolled, setScrolled] = useState<boolean>(false);
   const handleClick = () => setOpen(!open);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY !== 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header id="dropdown" className="fixed z-40 w-screen backdrop-blur-md">
+    <header
+      id="dropdown"
+      className={`fixed z-40 w-screen border-b-2 border-white backdrop-blur-md transition-colors duration-250 ${scrolled ? "border-opacity-5" : "border-opacity-0"}`}
+    >
       <div className="flex h-24 w-full items-center justify-between px-4">
         <MainLink
           linksToSamePage={!!mainLinksToSamePage}
