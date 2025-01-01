@@ -14,7 +14,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="max-h-sm flex max-w-md flex-col justify-start">
       <a
-        className="group relative w-full rounded-3xl border-2 border-invertbg p-2 transition-all duration-100 hover:-translate-y-1 hover:border-primary hover:dark:border-primary"
+        className="group relative w-full rounded-3xl border-2 border-invertbg p-2 transition-transform duration-100 hover:-translate-y-1 hover:border-primary hover:dark:border-primary"
         href={project.link}
         target="_blank"
         rel="noopener noreferrer"

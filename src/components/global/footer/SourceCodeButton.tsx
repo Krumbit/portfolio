@@ -5,7 +5,7 @@ import { ICONS, LINKS } from "util/constants";
 export default function SourceCodeButton() {
   return (
     <Link
-      className="flex h-auto w-fit items-center justify-center gap-4 rounded-xl border-2 border-primary bg-primary bg-opacity-5 px-4 py-2 transition-all duration-250 hover:bg-opacity-10 max-md:mt-4 max-md:w-full"
+      className="flex h-auto w-fit items-center justify-center gap-4 rounded-xl border-2 border-primary bg-primary bg-opacity-5 px-4 py-2 transition-colors duration-250 hover:bg-opacity-15 max-md:mt-4 max-md:w-full"
       href={LINKS.GitRepo}
     >
       <Image
