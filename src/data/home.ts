@@ -1,5 +1,5 @@
 import { Contact, NavbarElement, Skill } from "types";
-import { ICONS, LINKS } from "util/constants";
+import { ICONS, LINKS } from "data/constants";
 
 export const skills: Skill[] = [
   {

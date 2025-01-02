@@ -3,7 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import PostHogPageView from "posthog/PostHogPageView";
 import { Suspense } from "react";
-import { LINKS } from "util/constants";
+import { LINKS } from "data/constants";
 import { jbmono } from "util/fonts";
 import "./globals.css";
 import { PHProvider, ThemeProvider } from "./providers";

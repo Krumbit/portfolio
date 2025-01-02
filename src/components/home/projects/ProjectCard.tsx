@@ -1,7 +1,6 @@
+import { ICONS } from "data/constants";
 import Image from "next/image";
 import { Project } from "types";
-import { ICONS } from "util/constants";
-
 interface ProjectCardProps {
   project: Project;
 }

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { TIME_FORMAT_OPTIONS } from "util/constants";
+import { TIME_FORMAT_OPTIONS } from "data/constants";
 
 export default function CurrentTime() {
   const [hour12, setHour12] = useState(true);

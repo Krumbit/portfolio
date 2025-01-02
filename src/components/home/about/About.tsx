@@ -4,7 +4,7 @@ import { SectionSubtitle, SectionTitle } from "components/global/SectionTitles";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import { ICONS, LINKS } from "util/constants";
+import { ICONS, LINKS } from "data/constants";
 import { extractTwitterUsername } from "util/helpers";
 import PictureWithCredit from "./PictureWithCredit";
 

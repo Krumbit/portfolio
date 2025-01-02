@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { LanyardData, useLanyard } from "react-use-lanyard";
-import { DISCORD_USER_ID } from "util/constants";
+import { DISCORD_USER_ID } from "data/constants";
 
 const loadingColor = "bg-blue-500";
 const statusColors = {

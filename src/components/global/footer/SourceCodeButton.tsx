@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ICONS, LINKS } from "util/constants";
+import { ICONS, LINKS } from "data/constants";
 
 export default function SourceCodeButton() {
   return (
