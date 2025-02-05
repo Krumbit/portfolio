@@ -25,6 +25,8 @@ export default function Navbar({ mainLinksToSamePage, mainLink, subLinks }: NavB
       setScrolled(window.scrollY !== 0);
     };
 
+    // Set initial scroll state
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
