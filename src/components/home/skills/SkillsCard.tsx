@@ -1,7 +1,6 @@
 "use client";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { Skill } from "types";
 
@@ -16,7 +15,7 @@ export default function SkillsCard({ skill }: SkillsCardProps) {
   return (
     <div
       ref={ref}
-      className={`relative aspect-square min-w-[9.5rem] max-w-[12rem] rounded-3xl border-2 border-invertbg border-opacity-5 bg-invertbg bg-opacity-5 transition-opacity duration-1000 ${
+      className={`relative aspect-square w-full min-w-[9.5rem] max-w-[12rem] rounded-3xl border-2 border-invertbg border-opacity-5 bg-invertbg bg-opacity-5 transition-opacity duration-1000 ${
         inView ? "opacity-100" : "opacity-0 motion-reduce:opacity-100"
       } card-stagger`}
     >
