@@ -8,6 +8,7 @@ if (typeof window !== "undefined") {
     api_host: "/ingest",
     ui_host: "https://us.i.posthog.com",
     capture_pageview: false, // Disable automatic pageview capture, as we capture manually
+    person_profiles: "always",
   });
 }
 
