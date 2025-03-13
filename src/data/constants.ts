@@ -12,8 +12,8 @@ export const LINKS = {
   Email: "krumbit@krumb.it",
   Github: "https://github.com/Krumbit",
   GitRepo: "https://github.com/Krumbit/portfolio",
-  Twitter: "https://twitter.com/krumbit",
-  TwitterChels: "https://twitter.com/chelqea",
+  X: "https://x.com/krumbit",
+  XChels: "https://x.com/chelqea",
 } as const;
 
 export const ICONS = {

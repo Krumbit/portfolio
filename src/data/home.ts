@@ -120,8 +120,7 @@ export const contacts: Contact[] = [
     handle: "@krumbit",
   },
   {
-    name: "Twitter",
-    link: LINKS.Twitter,
+    link: LINKS.X,
     image: ICONS.X,
     handle: "@krumbit",
   },

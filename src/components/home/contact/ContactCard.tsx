@@ -17,7 +17,7 @@ export default function ContactCard({ contact, className }: ContactCardProps) {
         <Image
           className="aspect-square w-10 invert dark:invert-0"
           src={contact.image}
-          alt={contact.name}
+          alt={contact.name || contact.handle}
           width={100}
           height={100}
         />
