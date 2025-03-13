@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { ICONS, LINKS } from "data/constants";
-import { extractTwitterUsername } from "util/helpers";
+import { extractXUsername } from "util/helpers";
 import PictureWithCredit from "./PictureWithCredit";
 
 export default function About() {
@@ -57,7 +57,7 @@ export default function About() {
         height={256}
         width={256}
         credit={<IconCredit />}
-        creditHref={LINKS.TwitterChels}
+        creditHref={LINKS.XChels}
       />
     </Section>
   );
@@ -67,7 +67,7 @@ function IconCredit() {
   return (
     <>
       <span className="text-bg">
-        icon by <strong>@{extractTwitterUsername(LINKS.TwitterChels)}</strong> on
+        icon by <strong>@{extractXUsername(LINKS.XChels)}</strong> on
       </span>
       <Image className="ml-2 dark:invert" src={ICONS.X} alt="X Logo" width={20} height={20} />
     </>
